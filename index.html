@@ -1,5 +1,7 @@
-<html lang="ar" dir="rtl"><head>
-    <meta charset="UTF-8"><meta property="og:title" content="شريف عبد المنعم | خبير حلول الذكاء الاصطناعي">
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="شريف عبد المنعم | خبير حلول الذكاء الاصطناعي">
     <meta property="og:description" content="تطوير واجهات ذكية وحلول السحاب">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sherif-abdelmonyem.netlify.app/">
@@ -7,7 +9,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>شريف عبد المنعم | خبير حلول الذكاء الاصطناعي</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&amp;family=Cairo:wght@400;600;700;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -41,33 +43,34 @@
             display: flex;
             justify-content: center;
             width: 100%;
-            background: rgba(13, 17, 23, 0.8);
+            background: rgba(13, 17, 23, 0.85);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--border-color);
-            padding: 5px 0;
+            padding: 10px 0;
         }
 
         .quick-nav {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
             padding: 5px;
+            flex-wrap: wrap;
         }
 
         .nav-item {
             color: #fff;
             text-decoration: none;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 600;
-            padding: 6px 12px;
-            border-radius: 10px;
+            padding: 8px 16px;
+            border-radius: 12px;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
         }
 
-        .nav-item i { font-size: 0.75rem; }
+        .nav-item i { font-size: 0.8rem; }
 
         .nav-item:hover {
             background: rgba(0, 223, 216, 0.1);
@@ -75,7 +78,7 @@
         }
 
         /* Header & Welcome Text */
-        header { text-align: center; margin-bottom: 40px; margin-top: 40px; }
+        header { text-align: center; margin-bottom: 50px; margin-top: 40px; }
         
         header h1 {
             font-size: clamp(2.8rem, 6vw, 4rem);
@@ -83,13 +86,14 @@
             background: var(--gradient-text);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 15px;background-clip: text;
+            margin-bottom: 15px;
+            background-clip: text;
         }
 
-        #typewriter-container{ min-height: 120px; }
+        #typewriter-container { min-height: 120px; }
         
         #typewriter {
-            font-size: 1.67rem; 
+            font-size: 1.5rem; 
             color: var(--accent-color);
             font-weight: 700;
             text-shadow: 0 0 20px rgba(0, 223, 216, 0.4);
@@ -97,6 +101,7 @@
             padding-left: 15px;
             display: inline-block;
             margin-bottom: 15px;
+            text-align: right;
         }
 
         .passion-text {
@@ -136,10 +141,10 @@
             box-shadow: 0 25px 50px rgba(0,0,0,0.5);
         }
 
-        .card h3 { font-size: 1.7rem; color: var(--accent-color); margin-bottom: 15px; margin-top: 10px; }
-        .subtitle { font-weight: 700; color: #fff; display: block; margin-bottom: 15px; font-size: 1.1rem; }
+        .card h3 { font-size: 1.6rem; color: var(--accent-color); margin-bottom: 15px; margin-top: 10px; }
+        .subtitle { font-weight: 700; color: #fff; display: block; margin-bottom: 15px; font-size: 1.05rem; }
         
-        /* النقاط المعدلة كما في الصور */
+        /* نقاط القوائم */
         .points-list { list-style: none; margin-bottom: 15px; }
         .points-list li { 
             position: relative; 
@@ -151,13 +156,13 @@
             content: "➤";
             position: absolute;
             right: 0;
-            color: #4ade80; /* لون السهم الأخضر كما في الصور */
+            color: #4ade80;
             font-size: 0.8rem;
         }
 
         .description-box {
             background: rgba(0,0,0,0.4);
-            padding: 22px;
+            padding: 20px;
             border-radius: 20px;
             font-size: 0.95rem;
             color: var(--text-muted);
@@ -191,77 +196,76 @@
         .p-btn {
             background: var(--gradient-text);
             color: #000;
-            padding: 12px 24px;
+            padding: 10px 20px;
             border-radius: 14px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             transition: 0.3s;
             display: flex;
-            align-items: center; gap: 8px;
+            align-items: center; 
+            gap: 8px;
         }
+        .p-btn:hover { opacity: 0.9; transform: translateY(-2px); }
 
         .large { grid-column: span 2; }
         .full { grid-column: span 4; }
 
-        .cta-section { text-align: center; margin: 80px 0; }
-        .whatsapp-btn, .facebook-btn {
+        /* قسم التواصل المعدل والمتجاوب */
+        .cta-section { 
+            text-align: center; 
+            margin: 70px 0 40px 0; 
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .whatsapp-btn, .facebook-btn, .linkedin-btn {
+            padding: 14px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center; 
+            gap: 12px;
+            transition: 0.3s ease;
+        }
+
+        .whatsapp-btn {
             background: #25d366;
             color: white;
-            padding: 15px 355px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 800;
-            font-size: 1.2rem;
-            display: inline-flex;
-            align-items: center; gap: 15px;
-            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3);
-            transition: 0.3s;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
         }
+        .whatsapp-btn:hover { background: #20ba5a; transform: translateY(-3px); }
 
         .facebook-btn {
-            margin: 30px;
             background: #077ee0;
             color: white;
-            padding: 15px 35px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 800;
-            font-size: 1.2rem;
-            display: inline-flex;
-            align-items: center; gap: 15px;
-            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3);
-            transition: 0.3s;
+            box-shadow: 0 10px 25px rgba(7, 126, 224, 0.3);
         }
+        .facebook-btn:hover { background: #066cc2; transform: translateY(-3px); }
 
         .linkedin-btn {
-           background-color: #0a66c2;
-           color: #ffffff;
-           padding: 15px 35px;
-           border-radius: 50px;
-           display: inline-flex;
-           align-items: center;
-           gap: 15px;
-           font-size: 1.2rem;
-           font-weight: 800;
-           text-decoration: none;
-           font-weight: bold;
-           box-shadow: 0 4px 15px rgba(10, 102, 194, 0.4);
-           transition: all 0.3s ease;
-}
+            background-color: #0a66c2;
+            color: #ffffff;
+            box-shadow: 0 10px 25px rgba(10, 102, 194, 0.3);
+        }
+        .linkedin-btn:hover {
+            background-color: #084e96;
+            transform: translateY(-3px);
+        }
 
-       .linkedin-btn:hover {
-       background-color: #084e96;
-       transform: translateY(-2px);
-}
-
-        footer { text-align: center; padding: 50px; border-top: 1px solid var(--border-color); color: var(--text-muted); }
+        footer { text-align: center; padding: 40px; border-top: 1px solid var(--border-color); color: var(--text-muted); }
 
         @media (max-width: 900px) {
             .bento-grid { grid-template-columns: 1fr; }
             .large, .full { grid-column: span 1; }
-            .nav-item { font-size: 0.75rem; padding: 5px 8px; }
+            .nav-item { font-size: 0.8rem; padding: 6px 10px; }
             #typewriter { font-size: 1.2rem; }
+            .cta-section { flex-direction: column; align-items: center; }
+            .whatsapp-btn, .facebook-btn, .linkedin-btn { width: 100%; max-width: 320px; justify-content: center; }
         }
 
         .reveal { opacity: 0; transform: translateY(30px); transition: 0.8s; }
@@ -284,15 +288,14 @@
             <h1>شريف عبد المنعم</h1>
             <div id="typewriter-container">
                 <div id="typewriter"></div>
-
-                <p id="passion" class="passion-text active">
+                <p id="passion" class="passion-text">
                     لدي شغف كبير بالبرمجة والتقنيات الحديثة لذلك أعمل على تطوير مهاراتي البرمجية باستمرار بما يجعلني متمكنا في تنفيذ مشاريعكم البرمجية بدرجة كبيرة من الاحتراف والتميز.
                 </p>
             </div>
         </header>
 
         <main class="bento-grid">
-            <section id="genai" class="card large reveal active">
+            <section id="genai" class="card large reveal">
                 <h3>الذكاء الاصطناعي التوليدي (GenAI) &amp; هندسة الأوامر</h3>
                 <span class="subtitle">تقنيات الذكاء الاصطناعي: متخصص في توظيف نماذج LLM المتقدمة:</span>
                 <ul class="points-list">
@@ -306,7 +309,7 @@
                 <a href="#top" class="back-to-nav"><i class="fas fa-arrow-up"></i></a>
             </section>
 
-            <section id="cloud" class="card large reveal active" style="border-right: 4px solid var(--cloud-purple);">
+            <section id="cloud" class="card large reveal" style="border-right: 4px solid var(--cloud-purple);">
                 <h3>ذكاء السحاب (Cloud AI Integration)</h3>
                 <span class="subtitle">الربط بين قوة الحوسبة السحابية وذكاء الآلة:</span>
                 <ul class="points-list">
@@ -320,20 +323,21 @@
                 <a href="#top" class="back-to-nav"><i class="fas fa-arrow-up"></i></a>
             </section>
 
-            <section id="frontend" class="card large reveal active">
+            <section id="frontend" class="card large reveal">
                 <h3>تطوير الواجهات المتطورة (Modern Front-end)</h3>
+                <span class="subtitle">تصميم تجارب مستخدم تفاعلية وعصرية:</span>
                 <ul class="points-list">
-                    <li>تصميم واجهات Dynamic Bento Grids متجاوبة كلياً.</li>
-                    <li>إتقان تقنيات HTML5, CSS3, JavaScript لبناء تجارب مستخدم تفاعلية.</li>
-                    <li>دمج لوحات التحكم السحابية مع واجهات الويب الأمامية.</li>
+                    <li>تصميم واجهات Dynamic Bento Grids متجاوبة كلياً مع كافة الشاشات.</li>
+                    <li>إتقان تقنيات HTML5, CSS3, JavaScript لبناء تجارب مستخدم تفاعلية وسلسة.</li>
+                    <li>دمج لوحات التحكم السحابية مع واجهات الويب الأمامية بكفاءة عالية.</li>
                 </ul>
                 <div class="description-box">
-                    الواجهة الأمامية هي الجسر الذي يربط المستخدم بالخوارزميات المعقدة. أعتمد أسلوب "بينتو" لتنظيم المعلومات بشكل مرئي مريح, مع ضمان توافق كامل مع جميع الأجهزة، مما يجعل التفاعل مع أدوات الذكاء الاصطناعي عملية ممتعة وسلسة.
+                    الواجهة الأمامية هي الجسر الذي يربط المستخدم بالخوارزميات المعقدة. أعتمد أسلوب "بينتو" لتنظيم المعلومات بشكل مرئي مريح، مع ضمان توافق كامل مع جميع الأجهزة، مما يجعل التفاعل مع أدوات الذكاء الاصطناعي عملية ممتعة وسلسة.
                 </div>
                 <a href="#top" class="back-to-nav"><i class="fas fa-arrow-up"></i></a>
             </section>
 
-            <section id="projects" class="card large reveal active" style="background: linear-gradient(145deg, #161b22, #1c2128); border-color: var(--accent-color);">
+            <section id="projects" class="card large reveal" style="background: linear-gradient(145deg, #161b22, #1c2128); border-color: var(--accent-color);">
                 <h3>قسم مشاريعي (AI Apps)</h3>
                 <span class="subtitle">تطبيقات ذكاء اصطناعي حية تم تطويرها بالكامل:</span>
                 <div class="description-box">
@@ -341,14 +345,15 @@
                 </div>
                 <div class="project-links">
                     <a href="https://ai.studio/apps/dbf6a472-2858-4f7e-9892-191e2b2b79f5" target="_blank" class="p-btn"><i class="fas fa-external-link-alt"></i> تطبيق فحص العين الطبي</a>
-                    <a href="https://ai.studio/apps/21fbfd4f-ddd1-4d6b-a499-966400828dc8" target="_blank" class="p-btn"><i class="fas fa-external-link-alt"></i>تطبيق متابعة الحمل</a>
-                    <a href="https://ai.studio/apps/952b8c2d-eeaa-4f8f-8114-4b831f70350e" target="_blank" class="p-btn"><i class="fas fa-external-link-alt"></i>تطبيق ادارة المهام</a>
-                    <a href="#top" class="back-to-nav"><i class="fas fa-arrow-up"></i></a>
+                    <a href="https://ai.studio/apps/21fbfd4f-ddd1-4d6b-a499-966400828dc8" target="_blank" class="p-btn"><i class="fas fa-external-link-alt"></i> تطبيق متابعة الحمل</a>
+                    <a href="https://ai.studio/apps/952b8c2d-eeaa-4f8f-8114-4b831f70350e" target="_blank" class="p-btn"><i class="fas fa-external-link-alt"></i> تطبيق إدارة المهام</a>
+                </div>
+                <a href="#top" class="back-to-nav"><i class="fas fa-arrow-up"></i></a>
             </section>
 
-            <section id="grad" class="card full reveal active">
+            <section id="grad" class="card full reveal">
                 <h3>مشروع التخرج المطور</h3>
-                <span class="subtitle">كُلية التربية، جامعة عين شمس- قسم تكنولوجيا التعليم الرقمي  - تعليم مفتوح - بواسطة شريف عبد المنعم 2026</span>
+                <span class="subtitle">كُلية التربية، جامعة عين شمس - قسم تكنولوجيا التعليم الرقمي - تعليم مدمج - بواسطة شريف عبد المنعم 2026</span>
                 <div class="description-box">
                     يجسد هذا المشروع قمة الدمج بين المبادئ الأكاديمية والحلول التقنية المبتكرة. لقد قمت بتوظيف خبراتي في الذكاء الاصطناعي لتطوير منصة تخدم القطاع التربوي، مما يعكس قدرة التكنولوجيا على تحويل المناهج التقليدية إلى تجارب تفاعلية ذكية.
                 </div>
@@ -364,8 +369,8 @@
                 <i class="fab fa-facebook"></i> تواصل معي عبر فيسبوك
             </a>
             <a href="https://www.linkedin.com/in/sherif-sayed-312990340" class="linkedin-btn" target="_blank">
-               <i class="fab fa-linkedin"></i> تواصل معي عبر لينكد إن
-           </a>
+                <i class="fab fa-linkedin"></i> تواصل معي عبر لينكد إن
+            </a>
         </div>
 
         <footer>
@@ -376,7 +381,7 @@
     <script>
         const welcomeMessage = "مرحباً، أنا شريف عبد المنعم – مطور واجهات أمامية وخبير دمج حلول الذكاء الاصطناعي والحوسبة السحابية.";
         let charIndex = 0;
-        const typingSpeed = 90;
+        const typingSpeed = 80;
 
         function startTypingEffect() {
             if (charIndex < welcomeMessage.length) {
@@ -405,5 +410,5 @@
             handleScrollReveal();
         };
     </script>
-
-</body></html>
+</body>
+</html>
